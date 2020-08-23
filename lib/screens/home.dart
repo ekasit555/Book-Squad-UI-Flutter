@@ -1,4 +1,5 @@
 import 'package:book_squad/components/book_container.dart';
+import 'package:book_squad/components/footer.dart';
 import 'package:book_squad/components/header.dart';
 import 'package:book_squad/components/list_title.dart';
 import 'package:book_squad/components/progress_card.dart';
@@ -34,12 +35,17 @@ class Home extends StatelessWidget {
                 SizedBox(height: 30,),
               ],
             ),
-          )
+          ),
+          Footer()
         ],
       ),
     );
   }
 }
+
+
+
+
 
 
 
