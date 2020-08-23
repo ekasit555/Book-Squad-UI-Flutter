@@ -1,7 +1,10 @@
+import 'package:book_squad/components/favourite_container.dart';
 import 'package:book_squad/components/layout.dart';
 import 'package:book_squad/components/list_title.dart';
 import 'package:book_squad/components/progress_card.dart';
-import 'package:book_squad/components/text_wiget1.dart';
+import 'package:book_squad/constants.dart';
+import 'package:book_squad/data.dart';
+import 'package:book_squad/models/items.dart';
 import 'package:flutter/material.dart';
 
 class Profile extends StatelessWidget {
@@ -26,14 +29,17 @@ class ProfileBody extends StatelessWidget {
         ),
         SizedBox(height: 40,),
         ListTitle(title: "Your Fevourite \nBooks",  showIcon: false,),
-        ProgressCard(
-          childWidget: Text(
-          "You know you love to listen to Designs Books  and you can spend up to 1h daily")
+        FevouriteListContainer(
+          items: fevourite.map((item) => Item(
+            name: item["name"],
+            img: item["img"],
+            author: item["author"],
+          )).toList()
         ),
-        ProgressCard(
-          childWidget: Text(
-          "You know you love to listen to Designs Books  and you can spend up to 1h daily")
-        ),
+        Container(
+          margin: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+          alignment: Alignment.centerRight,
+          child: Text("see more", style: normalTextStyle,))
       ],
     );
   }

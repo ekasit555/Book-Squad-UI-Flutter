@@ -11,10 +11,7 @@ List<Map> bestSellers = [
     "name": "Everything is F*ucked",
     "img": "assets/images/book3.png",
   },
-  {
-    "name": "Eleven Minutes",
-    "img": "assets/images/book5.png",
-  },
+
 ];
 
 List<Map> popular = [
@@ -29,5 +26,18 @@ List<Map> popular = [
   {
     "name": "The Alchemist",
     "img": "assets/images/book6.png",
+  },
+];
+
+List<Map> fevourite = [
+  {
+    "name": "Everything is F*ucked",
+    "img": "assets/images/book3.png",
+    "author": "Mark Manson",
+  },
+  {
+    "name": "Eleven Minutes",
+    "img": "assets/images/book5.png",
+    "author": "Paulo Coelho"
   },
 ];

@@ -14,6 +14,7 @@ class ProgressCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.symmetric(horizontal: 5),
       decoration: BoxDecoration(
         color: bgColor,
         boxShadow: <BoxShadow>[
@@ -32,7 +33,7 @@ class ProgressCard extends StatelessWidget {
             CircleProgressBar(),
             Expanded(
               child: Container(
-                margin: EdgeInsets.all(10),
+                margin: EdgeInsets.all(5),
                 child: childWidget,
               ),
             )
