@@ -1,4 +1,6 @@
 import 'package:book_squad/components/bottom_bar_icon.dart';
+import 'package:book_squad/screens/home.dart';
+import 'package:book_squad/screens/profile.dart';
 import 'package:flutter/material.dart';
 
 class Footer extends StatelessWidget {
@@ -14,12 +16,28 @@ class Footer extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          BottomBarIcon(icon: Icons.crop_square),
+          BottomBarIcon(
+          icon: Icons.crop_square, 
+          onPressed: () => {
+              Navigator.pushReplacement(
+                context, 
+                MaterialPageRoute(
+                  builder: (context) => Home()))
+              },
+            ),
           BottomBarIcon(icon: Icons.favorite_border),
           BottomBarIcon(icon: Icons.bookmark_border),
-          BottomBarIcon(icon: Icons.person_outline),
-      ]
-        ),
-    );
+          BottomBarIcon(
+            icon: Icons.person_outline, 
+            onPressed: () => {
+              Navigator.pushReplacement(
+                context, 
+                MaterialPageRoute(
+                  builder: (context) => Profile()))
+              },
+            ),
+        ]
+      ),
+      );
   }
 }

@@ -6,7 +6,8 @@ class ListTitle extends StatelessWidget {
   final String title;
   final TextStyle textStyle;
   final double iconSize;
-
+  final bool showIcon;
+  
   const ListTitle({
     Key key, 
     @required this.title, 
@@ -16,7 +17,8 @@ class ListTitle extends StatelessWidget {
       fontWeight: FontWeight.bold, 
       height: 1
       ), 
-    this.iconSize = 40
+    this.iconSize = 40, 
+    this.showIcon = true,
   }) : super(key: key);
 
   @override
@@ -33,7 +35,7 @@ class ListTitle extends StatelessWidget {
             ),
           ),
         ),
-        Expanded(
+        if (showIcon) Expanded(
             child: Container(
             alignment: Alignment.centerRight,
             margin: EdgeInsets.only(right: 5),
