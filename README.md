@@ -6,13 +6,18 @@ designed by [uimate](https://dribbble.com/uimate)
 
 ## Screen Demo
 
-Landing Screen
+#### Landing Screen
 
 <img src="https://github.com/ekasit555/Book-Squad-UI-Flutter/blob/master/assets/demo/ss1.png" alt="alt text" width="200px" height="">
 
-Home Screen
+#### Home Screen
 
 <img src="https://github.com/ekasit555/Book-Squad-UI-Flutter/blob/master/assets/demo/ss2.png" alt="alt text" width="200px" height=""> <img src="https://github.com/ekasit555/Book-Squad-UI-Flutter/blob/master/assets/demo/ss3.png" width="200px" height="">
+
+#### Profile Screen
+
+<img src="https://github.com/ekasit555/Book-Squad-UI-Flutter/blob/master/assets/demo/ss4.png" alt="alt text" width="200px" height="">
+
 
 ## Getting Started
 
