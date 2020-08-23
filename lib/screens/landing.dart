@@ -1,5 +1,6 @@
 
 import 'package:book_squad/constants.dart';
+import 'package:book_squad/screens/home.dart';
 import 'package:flutter/material.dart';
 
 class Landing extends StatelessWidget {
@@ -37,7 +38,12 @@ class Landing extends StatelessWidget {
             child: RaisedButton(
               color: secondaryColor,
               textColor: Colors.white,
-              onPressed: () => {},
+              onPressed: () => {
+                Navigator.pushReplacement(
+                  context, 
+                  MaterialPageRoute(
+                    builder: (context) => Home()))
+              },
               child: Padding(
                 padding: const EdgeInsets.all(15.0),
                 child: Text('Get Started', style: TextStyle(fontSize: 22, fontWeight: FontWeight.w400),),

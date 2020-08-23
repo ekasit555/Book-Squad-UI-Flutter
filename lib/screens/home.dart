@@ -13,31 +13,33 @@ import 'package:flutter/material.dart';
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.symmetric(horizontal: 20),
-      child: Column(
-        children: <Widget>[
-          Header(),
-          Flexible(
-              child: ListView(
-              children: [
-                ListTitle(title: "Discover Our BestSellers",),
-                ItemListContainer(items: bestSellers.map((item) => Item(name: item['name'], img: item['img'])).toList(),),
-                SizedBox(height: 30,),
-                ProgressCard(childWidget: TextWidget1()),
-                SizedBox(height: 50,),
-                ListTitle(
-                  title: "Popular", 
-                  iconSize: 30,
-                  textStyle: subHeadingTextStyle
-                ),
-                ItemListContainer( items: popular.map((item) => Item(name: item['name'], img: item['img'])).toList(),),
-                SizedBox(height: 30,),
-              ],
+    return Scaffold(
+      body: Container(
+        margin: EdgeInsets.symmetric(horizontal: 20),
+        child: Column(
+          children: <Widget>[
+            Header(),
+            Flexible(
+                child: ListView(
+                children: [
+                  ListTitle(title: "Discover Our BestSellers",),
+                  ItemListContainer(items: bestSellers.map((item) => Item(name: item['name'], img: item['img'])).toList(),),
+                  SizedBox(height: 30,),
+                  ProgressCard(childWidget: TextWidget1()),
+                  SizedBox(height: 50,),
+                  ListTitle(
+                    title: "Popular", 
+                    iconSize: 30,
+                    textStyle: subHeadingTextStyle
+                  ),
+                  ItemListContainer( items: popular.map((item) => Item(name: item['name'], img: item['img'])).toList(),),
+                  SizedBox(height: 30,),
+                ],
+              ),
             ),
-          ),
-          Footer()
-        ],
+            Footer()
+          ],
+        ),
       ),
     );
   }
