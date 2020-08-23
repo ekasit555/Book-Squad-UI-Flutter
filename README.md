@@ -1,6 +1,18 @@
-# book_squad
+# Book Squad
 
-A new Flutter project.
+A new Flutter UI demo project
+
+designed by [uimate](https://dribbble.com/uimate)
+
+## Screen Demo
+
+Landing Screen
+
+<img src="https://github.com/ekasit555/Book-Squad-UI-Flutter/blob/master/assets/demo/ss1.png" alt="alt text" width="200px" height="">
+
+Home Screen
+
+<img src="https://github.com/ekasit555/Book-Squad-UI-Flutter/blob/master/assets/demo/ss2.png" alt="alt text" width="200px" height=""> <img src="https://github.com/ekasit555/Book-Squad-UI-Flutter/blob/master/assets/demo/ss3.png" width="200px" height="">
 
 ## Getting Started
 
